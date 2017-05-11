@@ -18,55 +18,54 @@ div{
   height: 40%;
 }
 
-
-
 /*responsive*/
+
 @media (min-width:0px) and (max-width: 320px){
   section{
-    background-image: url(../img/Landscape.jpg);
-    height: 200px;
+    background-image: url(../img/midnight-conversation.jpg);
+    height: 150px;
   }
   div{
-    content: url(../img/kitten-medium.png);
+    content: url(../img/kitten-small.png);
   }
 }
 
-@media (min-width:320px) and (max-width: 480px){
-  section{
-    background-image: url(../img/dawn.png);
-    height: 340px;
+  @media (min-width: 320px) and (max-width: 480px){
+    section{
+      background-image: url(../img/maxresdefault.jpg);
+      height: 400px;
+    }
+    div{
+      content: url(../img/kitten-small.png);
+    }
   }
-  div{
-    content: url(../img/kitten-medium.png);
-  }
-}
+
 
 @media (min-width:480px) and (max-width: 768px){
   section{
+    background-image: url(../img/Landscape.jpg);
+    height: 650px;
+  }
+  div{
+    content: url(../img/kitten-medium.png);
+  }
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+  section{
     background-image: url(../img/dawn.png);
-    height: 500px;
+    height: 900px;
+  }
+  div{
+    content: url(../img/kitten-medium.png);
+  }
+}
+
+@media (min-width:1024px) and (max-width: 1200px){
+  section{
+    background-image: url(../img/dawn.png);
+    height: 1000px;
   }
   div{
     content: url(../img/kitten-large.png);
-  }
-
-  @media (min-width:768px) and (max-width: 1024px){
-    section{
-      background-image: url(../img/maxresdefault.jpg);
-      height: 800px;
-    }
-    div{
-      content: url(../img/kitten-small.png);
-    }
-  }
-
-  @media (min-width:1024px) and (max-width: 1200px){
-    section{
-      background-image: url(../img/midnight-conversation_861064.jpg);
-    }
-    height: 1000px;
-
-    div{
-      content: url(../img/kitten-small.png);
-    }
   }
