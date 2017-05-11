@@ -1,7 +1,15 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 500px;
-  background-image: url(../img/Landscape.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,106 +19,57 @@ div{
   height: 40%;
 }
 
-/*.imagenes:hover{
-  transform:rotate(90deg);
-}*/
+
 
 /*responsive*/
-@media(min-width:1024px)and(max-width:1200px){
+@media (min-width:0px) and (max-width: 320px){
   section{
     background-image: url(../img/Landscape.jpg);
   }
-
+  div{
+    content: url(../img/kitten-medium.png);
+  }
 }
-@media(min-width:1024px)and(max-width:1200px){
+
+size
+
+@media (min-width:0px) and (max-width: 320px){
   section{
-    background-image: url(../img/Landscape.jpg);
+    background-image: url(../img/dawn.png);
+  }
+  div{
+    content: url(../img/kitten-medium.png);
+  }
+}
+
+size
+
+@media (min-width:0px) and (max-width: 320px){
+  section{
+    background-image: url(../img/dawn.png);
+  }
+  div{
+    content: url(../img/kitten-large.png);
   }
 
+  size
 
+  @media (min-width:0px) and (max-width: 320px){
+    section{
+      background-image: url(../img/maxresdefault.jpg);
+    }
+    div{
+      content: url(../img/kitten-small.png);
+    }
+  }
 
+  size
 
-/*clases reutilizables*/
-[class*="col-"]{
-  min-height: 7px;
-  float: left;
-}
-.container{
-  width: 100%;
-  margin: 0px auto;
-}
-
-.row:before, .row:after {
-  content: " ";
-  display: table;
-}
-
-.row:after {
-  clear: both;
-}
-
-[class*="col-"] {
-  min-height: 7px;
-  padding: 12px;
-  float: left;
-}
-
-.col-1 {
-  /* (1/12) x 100% */
-  width: 8.333333%;
-}
-
-.col-2 {
-  /* (2/12) x 100% */
-  width: 16.66667%;
-}
-
-.col-3 {
-  /* (3/12) x 100% */
-  width: 25%;
-}
-
-.col-4 {
-  /* (4/12) x 100% */
-  width: 33.33333%;
-}
-
-.col-5 {
-  /* (5/12) x 100% */
-  width: 41.666667%;
-}
-
-.col-6 {
-  /* (6/12) x 100% */
-  width: 50%;
-}
-
-.col-7 {
-  /* (7/12) x 100% */
-  width: 58.333333%;
-}
-
-.col-8 {
-  /* (8/12) x 100% */
-  width: 66.6666667%;
-}
-
-.col-9 {
-  /* (9/12) x 100% */
-  width: 75%;
-}
-
-.col-10 {
-  /* (10/12) x 100% */
-  width: 83.333333%;
-}
-
-.col-11 {
-  /* (11/12) x 100% */
-  width: 91.6666%;
-}
-
-.col-12 {
-  /* (12/12) x 100% */
-  width: 100%;
-}
+  @media (min-width:0px) and (max-width: 320px){
+    section{
+      background-image: url(../img/midnight-conversation_861064.jpg);
+    }
+    div{
+      content: url(../img/kitten-small.png);
+    }
+  }
